@@ -3,8 +3,6 @@
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 
-
-
 /*
 |--------------------------------------------------------------------------
 | API Routes
@@ -27,15 +25,13 @@ Route::get( "/dolgozolista", [ JobController::class, "listUser" ]);
 Route::get( "/update/{id}", [ DolgozoController::class, "showUpdateDolgozo" ]);
 Route::get( "/delete/{id}", [ DolgozoController::class, "deleteDolgozo" ]);
 
-
 /*
 Ladányi Bertold
 Ide még visszatérek frissíteni. Határidő miatt leadom így...
 */
 
-
 Route::get( "/", function() {
-    return view( "elcome" );
+    return view( "welcome" );
 });
 
 Route::get( "/test", function() {
