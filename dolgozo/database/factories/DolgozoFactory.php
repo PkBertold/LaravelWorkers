@@ -17,7 +17,16 @@ class DolgozoFactory extends Factory
     public function definition()
     {
         return [
-            //
+            "name" => $this->faker->name,
+            "email" => $this->faker->safeEmail,
+            "phone" => $this->faker->phoneNumber,
+            "age" => $this->faker->numberBetween( 25, 45 ),
+            "gender" => $this->faker->randomElement( array(
+                    "férfi",
+                    "nő",
+                    "egyéb"
+                )),
+            "address" => $this->faker->address
         ];
     }
 }

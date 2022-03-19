@@ -34,7 +34,7 @@
                 <td>{{ $dolgozo->fizetes }}</td>
             </tr>
                 <td>
-                    <a class="btn btn-primary" href="/delete/{{ $student->id }}">Törlés</a>
+                    <a class="btn btn-primary" href="/delete/{{ $dolgozo->id }}">Törlés</a>
                 </td>
       @endforeach
     </tbody>
